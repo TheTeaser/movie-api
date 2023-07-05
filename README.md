@@ -1,4 +1,4 @@
-## LAB - Class 31
+## LAB - Class 32: Permissions & Postgresql
 ---
 ## Project: Movie-API
 ---
