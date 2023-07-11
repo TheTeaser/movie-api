@@ -18,9 +18,9 @@ class MovieDetail(generics.RetrieveUpdateDestroyAPIView):
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializers
-    permission_classes= [IsAuthenticatedOrReadOnly]
+    permission_classes= [IsOwnerOrReadOnly]
 
 class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializers
-    permission_classes= [IsAuthenticatedOrReadOnly]
+    permission_classes= [IsOwnerOrReadOnly]
